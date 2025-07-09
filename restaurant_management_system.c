@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function declarations
+
 float starters();
 float meals();
 float drinks();
@@ -10,16 +10,15 @@ int main() {
 
     printf("\t\t\t\tWelcome to South Indian Restaurant\n");
 
-    // Starters
+    
     s1 = starters();
 
-    // Meals
+    
     s2 = meals();
 
-    // Drinks
+    
     s3 = drinks();
 
-    // Total bill
     total = s1 + s2 + s3;
 
     printf("\n====================================");
@@ -29,7 +28,7 @@ int main() {
     return 0;
 }
 
-// Starters function
+
 float starters() {
     int n, i,choice, quantity;
     float bill = 0;
@@ -59,11 +58,11 @@ float starters() {
         }
     }
 
-    printf("Starters Bill = ?%.2f\n", bill);
+    printf("Starters Bill = %.2f\n", bill);
     return bill;
 }
 
-// Meals function
+
 float meals() {
     int n, i,choice, quantity;
     float bill = 0;
@@ -91,11 +90,11 @@ float meals() {
         }
     }
 
-    printf("Meals Bill = ?%.2f\n", bill);
+    printf("Meals Bill = %.2f\n", bill);
     return bill;
 }
 
-// Drinks function
+
 float drinks() {
     int n,i, choice, quantity;
     float bill = 0;
@@ -123,7 +122,7 @@ float drinks() {
         }
     }
 
-    printf("Drinks Bill = ?%.2f\n", bill);
+    printf("Drinks Bill = %.2f\n", bill);
     return bill;
 }
 
